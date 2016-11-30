@@ -10,7 +10,7 @@
         <EntityTypeShape EntityType="PlutoModel.CourseSection" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PlutoModel.Post" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PlutoModel.Tag" Width="1.5" PointX="6.625" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="PlutoModel.tblUser" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlutoModel.tblUser" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
         <AssociationConnector Association="PlutoModel.FK_Courses_Authors" ManuallyRouted="false" />
         <AssociationConnector Association="PlutoModel.FK_CourseSections_Courses" ManuallyRouted="false" />
         <AssociationConnector Association="PlutoModel.CourseTags" ManuallyRouted="false" />

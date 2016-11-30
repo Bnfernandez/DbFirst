@@ -7,31 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DbFirst
+namespace Vidzy
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Course
+    public partial class Genre
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Course()
+        public Genre()
         {
-            this.CourseSections = new HashSet<CourseSection>();
-            this.Tags = new HashSet<Tag>();
+            this.Videos = new HashSet<Video>();
         }
     
-        public int CourseID { get; set; }
-        public int AuthorID { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public DbFirst.Level Level { get; set; }
-        public short FullPrice { get; set; }
+        public byte Id { get; set; }
+        public string Name { get; set; }
     
-        public virtual Author Author { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CourseSection> CourseSections { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tag> Tags { get; set; }
+        public virtual ICollection<Video> Videos { get; set; }
     }
 }
